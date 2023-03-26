@@ -1,39 +1,8 @@
 # Tune-A-Video
 
-This repository is the official implementation of [Tune-A-Video](https://arxiv.org/abs/2212.11565).
-
 **[Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation](https://arxiv.org/abs/2212.11565)**
-<br/>
-[Jay Zhangjie Wu](https://zhangjiewu.github.io/), 
-[Yixiao Ge](https://geyixiao.com/), 
-[Xintao Wang](https://xinntao.github.io/), 
-[Stan Weixian Lei](), 
-[Yuchao Gu](https://ycgu.site/), 
-[Yufei Shi](),
-[Wynne Hsu](https://www.comp.nus.edu.sg/~whsu/), 
-[Ying Shan](https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en), 
-[Xiaohu Qie](https://scholar.google.com/citations?user=mk-F69UAAAAJ&hl=en), 
-[Mike Zheng Shou](https://sites.google.com/view/showlab)
-<br/>
 
-[![Project Website](https://img.shields.io/badge/Project-Website-orange)](https://tuneavideo.github.io/)
-[![arXiv](https://img.shields.io/badge/arXiv-2212.11565-b31b1b.svg)](https://arxiv.org/abs/2212.11565)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Tune-A-Video-library/Tune-A-Video-Training-UI)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/showlab/Tune-A-Video/blob/main/notebooks/Tune-A-Video.ipynb)
-
-
-<p align="center">
-<img src="https://tuneavideo.github.io/assets/overview.png" width="800px"/>  
-<br>
-<em>Given a video-text pair as input, our method, Tune-A-Video, fine-tunes a pre-trained text-to-image diffusion model for text-to-video generation.</em>
-</p>
-
-## News
-- [02/22/2023] Improved consistency using DDIM inversion.
-- [02/08/2023] [Colab demo](https://colab.research.google.com/github/showlab/Tune-A-Video/blob/main/notebooks/Tune-A-Video.ipynb) released!
-- [02/03/2023] Pre-trained Tune-A-Video models are available on [Hugging Face Library](https://huggingface.co/Tune-A-Video-library)!
-- [01/28/2023] New Feature: tune a video on personalized [DreamBooth](https://dreambooth.github.io/) models.
-- [01/28/2023] Code released!
 
 ## Setup
 
