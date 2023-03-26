@@ -71,7 +71,7 @@ save_videos_grid(video, f"./{prompt}.gif")
 
 <tr>
   <td width=25% style="text-align:center;color:gray;">"A man is skiing"</td>
-  <td width=25% style="text-align:center;">"Wonder Woman, wearing a cowboy hat, is skiing"</td>
+  <td width=25% style="text-align:center;">"Wonder Woman, is skiing"</td>
   <td width=25% style="text-align:center;">"A little girl is skiing "</td>
 </tr>
      
@@ -117,8 +117,6 @@ save_videos_grid(video, f"./{prompt}.gif")
 </table>
 
 ### Pretrained T2I (personalized DreamBooth)
-
-<img src="https://tuneavideo.github.io/assets/results/tuneavideo/modern-disney/modern-disney.png" width="240px"/>  
 
 <table class="center">
 <tr>
