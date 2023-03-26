@@ -116,26 +116,7 @@ save_videos_grid(video, f"./{prompt}.gif")
 
 </table>
 
-### Pretrained T2I (personalized DreamBooth)
 
-<table class="center">
-<tr>
-  <td style="text-align:center;"><b>Input Video</b></td>
-  <td style="text-align:center;" colspan="3"><b>Output Video</b></td>
-</tr>
-<tr>
-  <td><img src="https://tuneavideo.github.io/assets/data/bear-guitar.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/modern-disney/bear-guitar/rabbit.gif"></td>      
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/modern-disney/bear-guitar/prince.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/modern-disney/bear-guitar/princess.gif"></td>
-</tr>
-<tr>
-  <td width=25% style="text-align:center;color:gray;">"A bear is playing guitar"</td>
-  <td width=25% style="text-align:center;">"A rabbit is playing guitar, modern disney style"</td>
-  <td width=25% style="text-align:center;">"A handsome prince is playing guitar, modern disney style"</td>
-  <td width=25% style="text-align:center;">"A magic princess with sunglasses is playing guitar on the stage, modern disney style"</td>
-</tr>
-</table>
 
 
 
