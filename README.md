@@ -32,9 +32,6 @@ To fine-tune the text-to-image diffusion models for text-to-video generation, ru
 accelerate launch train_tuneavideo.py --config="configs/man-skiing.yaml"
 ```
 
-Note: Tuning a 24-frame video usually takes `300~500` steps, about `10~15` minutes using one A100 GPU. 
-Reduce `n_sample_frames` if your GPU memory is limited.
-
 ### Inference
 
 Once the training is done, run inference:
@@ -62,17 +59,35 @@ save_videos_grid(video, f"./{prompt}.gif")
 ## Results
 
 ### Pretrained T2I (Stable Diffusion)
+
+  
+### <b>Input Video</b>
+  
+  
+### <b>Output Video</b>
+
 <table class="center">
 <tr>
   <td style="text-align:center;"><b>Input Video</b></td>
   <td style="text-align:center;" colspan="3"><b>Output Video</b></td>
 </tr>
+  
 <tr>
-  <td><img src="https://tuneavideo.github.io/assets/data/man-skiing.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/man-skiing/spiderman-beach.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/man-skiing/wonder-woman.gif"></td>              
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/man-skiing/pink-sunset.gif"></td>
+  <td><img src="https://user-images.githubusercontent.com/33378412/227791032-301ad016-baa5-48e7-bee6-53eecff5c39f.gif"></td>
+  <td><img src="https://user-images.githubusercontent.com/33378412/227790574-41828540-0a0e-4617-9751-4cacd83212f5.gif"></td>
+   <td><img src="https://user-images.githubusercontent.com/33378412/227790190-a51b3632-e3d6-402d-ac48-f458e28ee3bb.gif"></td>
 </tr>
+
+![download(6)](https://user-images.githubusercontent.com/33378412/227790590-c1c13d51-7409-4f3c-914f-9d1ad422bc30.gif)
+  
+![download](https://user-images.githubusercontent.com/33378412/227790611-0a788ac2-9b2b-4267-b436-13bd1324b774.gif)
+
+  ![download (4)]()
+![download(2)](https://user-images.githubusercontent.com/33378412/227790211-964f8fda-133c-4bca-b623-fa49f4f37caf.gif)
+
+![download(7)](https://user-images.githubusercontent.com/33378412/227790275-bb990f6a-485a-473f-9507-a46c4c95c26b.gif)
+   
+
 <tr>
   <td width=25% style="text-align:center;color:gray;">"A man is skiing"</td>
   <td width=25% style="text-align:center;">"Spider Man is skiing on the beach, cartoon style”</td>
