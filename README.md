@@ -1,4 +1,4 @@
-# Tune-A-Video
+# Video Generation from text
 
 **[Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation](https://arxiv.org/abs/2212.11565)**
 
@@ -11,9 +11,6 @@
 ```shell
 pip install -r requirements.txt
 ```
-
-Installing [xformers](https://github.com/facebookresearch/xformers) is highly recommended for more efficiency and speed on GPUs. 
-To enable xformers, set `enable_xformers_memory_efficient_attention=True` (default).
 
 ### Weights
 
@@ -60,79 +57,49 @@ save_videos_grid(video, f"./{prompt}.gif")
 
 ### Pretrained T2I (Stable Diffusion)
 
-  
-### <b>Input Video</b>
-  
-  
-### <b>Output Video</b>
-
 <table class="center">
 <tr>
   <td style="text-align:center;"><b>Input Video</b></td>
-  <td style="text-align:center;" colspan="3"><b>Output Video</b></td>
+  <td style="text-align:center;" colspan="2"><b>Output Video</b></td>
 </tr>
   
 <tr>
   <td><img src="https://user-images.githubusercontent.com/33378412/227791032-301ad016-baa5-48e7-bee6-53eecff5c39f.gif"></td>
   <td><img src="https://user-images.githubusercontent.com/33378412/227790574-41828540-0a0e-4617-9751-4cacd83212f5.gif"></td>
-   <td><img src="https://user-images.githubusercontent.com/33378412/227790190-a51b3632-e3d6-402d-ac48-f458e28ee3bb.gif"></td>
+  <td><img src="https://user-images.githubusercontent.com/33378412/227790190-a51b3632-e3d6-402d-ac48-f458e28ee3bb.gif"></td>
 </tr>
-
-![download(6)](https://user-images.githubusercontent.com/33378412/227790590-c1c13d51-7409-4f3c-914f-9d1ad422bc30.gif)
-  
-![download](https://user-images.githubusercontent.com/33378412/227790611-0a788ac2-9b2b-4267-b436-13bd1324b774.gif)
-
-  ![download (4)]()
-![download(2)](https://user-images.githubusercontent.com/33378412/227790211-964f8fda-133c-4bca-b623-fa49f4f37caf.gif)
-
-![download(7)](https://user-images.githubusercontent.com/33378412/227790275-bb990f6a-485a-473f-9507-a46c4c95c26b.gif)
-   
 
 <tr>
   <td width=25% style="text-align:center;color:gray;">"A man is skiing"</td>
-  <td width=25% style="text-align:center;">"Spider Man is skiing on the beach, cartoon style”</td>
   <td width=25% style="text-align:center;">"Wonder Woman, wearing a cowboy hat, is skiing"</td>
-  <td width=25% style="text-align:center;">"A man, wearing pink clothes, is skiing at sunset"</td>
+  <td width=25% style="text-align:center;">"A little girl is skiing "</td>
 </tr>
-
+     
 <tr>
   <td><img src="https://tuneavideo.github.io/assets/data/rabbit-watermelon.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/rabbit-watermelon/rabbit.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/rabbit-watermelon/cat.gif"></td>              
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/rabbit-watermelon/puppy.gif"></td>
+  <td><img src="https://user-images.githubusercontent.com/33378412/227790611-0a788ac2-9b2b-4267-b436-13bd1324b774.gif"></td>
+  <td><img src="https://user-images.githubusercontent.com/33378412/227790211-964f8fda-133c-4bca-b623-fa49f4f37caf.gif"></td>              
+ 
 </tr>
 <tr>
   <td width=25% style="text-align:center;color:gray;">"A rabbit is eating a watermelon"</td>
-  <td width=25% style="text-align:center;">"A rabbit is <del>eating a watermelon</del> on the table"</td>
-  <td width=25% style="text-align:center;">"A cat with sunglasses is eating a watermelon on the beach"</td>
+  <td width=25% style="text-align:center;">"A cat is eating a watermelon on the table"</td>
   <td width=25% style="text-align:center;">"A puppy is eating a cheeseburger on the table, comic style"</td>
-</tr>
+ </tr>
 
 <tr>
   <td><img src="https://tuneavideo.github.io/assets/data/car-turn.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/car-turn/porsche-beach.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/car-turn/car-cartoon.gif"></td>              
+  <td><img src="https://user-images.githubusercontent.com/33378412/227790590-c1c13d51-7409-4f3c-914f-9d1ad422bc30.gif"></td>              
   <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/car-turn/car-snow.gif"></td>
 </tr>
 <tr>
   <td width=25% style="text-align:center;color:gray;">"A jeep car is moving on the road"</td>
-  <td width=25% style="text-align:center;">"A Porsche car is moving on the beach"</td>
   <td width=25% style="text-align:center;">"A car is moving on the road, cartoon style"</td>
   <td width=25% style="text-align:center;">"A car is moving on the snow"</td>
+
+ 
 </tr>
 
-<tr>
-  <td><img src="https://tuneavideo.github.io/assets/data/man-basketball.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/man-basketball/trump.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/man-basketball/astronaut.gif"></td>              
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/man-basketball/lego.gif"></td>
-</tr>
-<tr>
-  <td width=25% style="text-align:center;color:gray;">"A man is dribbling a basketball"</td>
-  <td width=25% style="text-align:center;">"Trump is dribbling a basketball"</td>
-  <td width=25% style="text-align:center;">"An astronaut is dribbling a basketball, cartoon style"</td>
-  <td width=25% style="text-align:center;">"A lego man in a black suit is dribbling a basketball"</td>
-</tr>
 
 <!-- <tr>
   <td><img src="https://tuneavideo.github.io/assets/data/lion-roaring.gif"></td>
@@ -172,40 +139,5 @@ save_videos_grid(video, f"./{prompt}.gif")
 </tr>
 </table>
 
-<img src="https://tuneavideo.github.io/assets/results/tuneavideo/mr-potato-head/mr-potato-head.png" width="240px"/>  
-
-<table class="center">
-<tr>
-  <td style="text-align:center;"><b>Input Video</b></td>
-  <td style="text-align:center;" colspan="3"><b>Output Video</b></td>
-</tr>
-<tr>
-  <td><img src="https://tuneavideo.github.io/assets/data/bear-guitar.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/mr-potato-head/bear-guitar/lego-snow.gif"></td>
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/mr-potato-head/bear-guitar/sunglasses-beach.gif"></td>      
-  <td><img src="https://tuneavideo.github.io/assets/results/tuneavideo/mr-potato-head/bear-guitar/van-gogh.gif"></td>
-</tr>
-<tr>
-  <td width=25% style="text-align:center;color:gray;">"A bear is playing guitar"</td>
-  <td width=25% style="text-align:center;">"Mr Potato Head, made of lego, is playing guitar on the snow"</td>
-  <td width=25% style="text-align:center;">"Mr Potato Head, wearing sunglasses, is playing guitar on the beach"</td>
-  <td width=25% style="text-align:center;">"Mr Potato Head is playing guitar in the starry night, Van Gogh style"</td>
-</tr>
-</table>
 
 
-## Citation
-If you make use of our work, please cite our paper.
-```bibtex
-@article{wu2022tuneavideo,
-    title={Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation},
-    author={Wu, Jay Zhangjie and Ge, Yixiao and Wang, Xintao and Lei, Stan Weixian and Gu, Yuchao and Hsu, Wynne and Shan, Ying and Qie, Xiaohu and Shou, Mike Zheng},
-    journal={arXiv preprint arXiv:2212.11565},
-    year={2022}
-}
-```
-
-## Shoutouts
-
-- This code builds on [diffusers](https://github.com/huggingface/diffusers). Thanks for open-sourcing!
-- Thanks [hysts](https://github.com/hysts) for the awesome [gradio demo](https://huggingface.co/spaces/Tune-A-Video-library/Tune-A-Video-Training-UI).
